@@ -11,7 +11,7 @@ const Team = () => {
           </Heading>
         </Center>
 
-        <Image src="/team.png" />
+        <Image src="/team.png" alt="a" />
       </VStack>
     </Page>
   );

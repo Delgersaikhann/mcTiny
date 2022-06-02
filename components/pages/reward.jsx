@@ -91,7 +91,7 @@ const Reward = () => {
     <Box w="100%" h="100%" overflow="hidden">
       <Slider {...settings}>
         {data.map((el, idx) => (
-          <Page>
+          <Page key={el.title}>
             <VStack
               h="100%"
               w="100%"

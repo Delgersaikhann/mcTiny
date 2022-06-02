@@ -102,7 +102,7 @@ const AiTeachers = () => {
     <Box w="100%" h="100%" overflow="hidden">
       <Slider {...settings}>
         {data.map((el, idx) => (
-          <Page>
+          <Page key={el.title}>
             <VStack h="100%" w="100%" bg="white" justifyContent="flex-start">
               <Center w="100%" p={7}>
                 <Heading

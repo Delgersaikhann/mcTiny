@@ -7,7 +7,7 @@ const data = [
   {
     title: "Curriculum",
     image: <Center flexGrow={1.5}></Center>,
-    text:
+    text: (
       <Text textAlign="justify" flexGrow={1}>
         As soon as people hear a{" "}
         <span style={{ color: "#E8518C" }}>curriculum</span>, they think of a
@@ -16,32 +16,32 @@ const data = [
         <span style={{ color: "#E8518C" }}>curriculum</span>. If that outcome is
         not felt in a short period of time, most people become discouraged.
       </Text>
-    ,
+    ),
   },
   {
     title: "Tiny",
-    image:
+    image: (
       <Center flexGrow={1.5}>
         {" "}
         <Image src="/curriculum1.png" h="100px" alt="play" />
       </Center>
-    ,
-    text:
+    ),
+    text: (
       <Text textAlign="justify" flexGrow={1}>
         Let’s make a <span style={{ color: "#E8518C" }}>giant curriculum</span>{" "}
         into tiny tasks and make the outcomes come in a short period of time.
       </Text>
-    ,
+    ),
   },
   {
     title: "Role play game",
-    image:
+    image: (
       <Center flexGrow={1.5}>
         {" "}
         <Image src="/play.png" h="100px" alt="learn" />
       </Center>
-    ,
-    text:
+    ),
+    text: (
       <Text textAlign="justify" flexGrow={1}>
         The lessons’ programs will be delivered in a form of games that will
         give the{" "}
@@ -49,24 +49,24 @@ const data = [
         order to gain{" "}
         <span style={{ color: "#E8518C" }}>real-life experience</span>.
       </Text>
-    ,
+    ),
   },
   {
     title: "Interactive assessment",
-    image:
+    image: (
       <Center flexGrow={1.5}>
         {" "}
         <Image src="/curriculum2.png" h="100px" alt="earn" />
       </Center>
-    ,
-    text:
+    ),
+    text: (
       <Text textAlign="justify" flexGrow={1}>
         The results will be evaluated in an{" "}
         <span style={{ color: "#E8518C" }}> interesting, interactive way </span>
         , not by filling out a test on paper. It’s also the time to beat the big
         BOSS, not the fear of taking a final exam.
       </Text>
-    ,
+    ),
   },
 ];
 
@@ -75,7 +75,7 @@ const Curriculum = () => {
     <Box w="100%" h="100%" overflow="hidden">
       <Slider {...settings}>
         {data.map((el, idx) => (
-          <Page>
+          <Page key={el.title}>
             <VStack
               h="100%"
               w="100%"

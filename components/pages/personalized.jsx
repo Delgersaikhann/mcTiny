@@ -2,42 +2,41 @@ import { Heading, VStack, Text, Center, Box, Image } from "@chakra-ui/react";
 import Slider from "react-slick";
 import { settings } from "../Config";
 import { Page } from "../page";
-
+/*eslint-disable*/
 const data = [
   {
     title: "Personalized",
-    image:
+    image: (
       <Center flexGrow={1.5}>
         {" "}
         <Image src="/profile.png" h="320px" alt="play" />
       </Center>
-    ,
-    text:
+    ),
+    text: (
       <Text textAlign="justify" flexGrow={1}>
         When one excellent teacher focuses on only one learner, the learner
         shows massive improvement due to{" "}
         <span style={{ color: "#E8518C" }}>personalization </span>. That's why
         we are going to offer{" "}
         <span style={{ color: "#E8518C" }}>personalization</span> to our
-        learners.
-
-        Your <span style={{ color: "#E8518C" }}> personalization </span> will
-        start by creating your avatar, and through that avatar, we will study
-        your learning patterns and methods to create the best learning map for
-        you. In addition, the successful completion of every mission and quest
-        will grant rewards that are meant only for you
+        learners. Your{" "}
+        <span style={{ color: "#E8518C" }}> personalization </span> will start
+        by creating your avatar, and through that avatar, we will study your
+        learning patterns and methods to create the best learning map for you.
+        In addition, the successful completion of every mission and quest will
+        grant rewards that are meant only for you
       </Text>
-    ,
+    ),
   },
   {
     title: "Character Avatar",
-    image:
+    image: (
       <Center flexGrow={1.5}>
         {" "}
         <Image src="/pers1.png" h="320px" alt="play" />
       </Center>
-    ,
-    text:
+    ),
+    text: (
       <Text textAlign="justify" flexGrow={1}>
         Your <span style={{ color: "#E8518C" }}>created avatar</span> will be
         your lifelong virtual version of yourself. It will play with you, it
@@ -45,17 +44,17 @@ const data = [
         information about you; will be presented through your{" "}
         <span style={{ color: "#E8518C" }}>created avatar</span>.
       </Text>
-    ,
+    ),
   },
   {
     title: "Only You",
-    image:
+    image: (
       <Center flexGrow={1.5}>
         {" "}
         <Image src="/pers2.png" h="320px" alt="learn" />
       </Center>
-    ,
-    text:
+    ),
+    text: (
       <Text textAlign="justify" flexGrow={1}>
         To make your learning personalized and more effective, we will take
         actions based <span style={{ color: "#E8518C" }}>on your data </span>.
@@ -63,17 +62,17 @@ const data = [
         most to teach you through your interests and preferences. We might have
         found the solution to your boredom.
       </Text>
-    ,
+    ),
   },
   {
     title: "Learning Map",
-    image:
+    image: (
       <Center flexGrow={1.5}>
         {" "}
         <Image src="/pers3.png" h="320px" alt="earn" />
       </Center>
-    ,
-    text:
+    ),
+    text: (
       <Text textAlign="justify" flexGrow={1}>
         <span style={{ color: "#E8518C" }}>Learning Map</span> will guide you on
         your learning journey and will be personalized just for you. Depending
@@ -83,7 +82,7 @@ const data = [
         <span style={{ color: "#E8518C" }}>Learning Map </span>
         will begin.
       </Text>
-    ,
+    ),
   },
 ];
 
@@ -92,7 +91,7 @@ const Personalized = () => {
     <Box w="100%" h="100%" overflow="hidden">
       <Slider {...settings}>
         {data.map((el, idx) => (
-          <Page>
+          <Page key={el.title}>
             <VStack
               h="100%"
               w="100%"
