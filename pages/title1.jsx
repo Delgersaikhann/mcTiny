@@ -6,7 +6,7 @@ const Title1 = () =>{
 
     return(
         <Page>
-            <Box >Title 1</Box>
+            <Box >Title 1 utest</Box>
         </Page>
     )
 }
