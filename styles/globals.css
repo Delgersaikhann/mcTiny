@@ -15,3 +15,16 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.slick-dots{
+  bottom: 50px !important;
+}
+.slick-dots li.slick-active button:before, .slick-dots li button:before{
+  font-size: 15px !important;
+}
+.slick-dots li.slick-active button:before{
+  color: #E8518C !important;
+}
+.slick-next:before, .slick-prev:before {
+  content: '' !important;
+}

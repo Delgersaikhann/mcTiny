@@ -1,18 +1,20 @@
-import { Heading, VStack , Text, Center} from "@chakra-ui/react"
-
+import { Heading, VStack, Text, Center, Image } from "@chakra-ui/react";
+import { Page } from "../page";
 
 const Team = () => {
-    return(
-        <VStack h="100%" w="100%" bg="white" p={7}>
-            <Center w="100%" h="30%">
-
-            <Heading  textTransform="uppercase" >
+  return (
+    <Page>
+      <VStack h="100%" w="100%" bg="white" p={7}>
+        <Center w="100%" h="30%">
+          <Heading textTransform="uppercase" color="#9E329E">
             Team
-            </Heading>
-            </Center>
-           
-        </VStack>
-    )
-}
+          </Heading>
+        </Center>
 
-export default Team
+        <Image src="/team.png" />
+      </VStack>
+    </Page>
+  );
+};
+
+export default Team;
