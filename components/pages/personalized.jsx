@@ -13,19 +13,23 @@ const data = [
       </Center>
     ),
     text: (
-      <Text textAlign="justify" flexGrow={1}>
-        When one excellent teacher focuses on only one learner, the learner
-        shows massive improvement due to{" "}
-        <span style={{ color: "#E8518C" }}>personalization </span>. That's why
-        we are going to offer{" "}
-        <span style={{ color: "#E8518C" }}>personalization</span> to our
-        learners. Your{" "}
-        <span style={{ color: "#E8518C" }}> personalization </span> will start
-        by creating your avatar, and through that avatar, we will study your
-        learning patterns and methods to create the best learning map for you.
-        In addition, the successful completion of every mission and quest will
-        grant rewards that are meant only for you
-      </Text>
+      <VStack pb="20%">
+        <Text textAlign="justify" flexGrow={1} fontSize="xs">
+          When one excellent teacher focuses on only one learner, the learner
+          shows massive improvement due to{" "}
+          <span style={{ color: "#E8518C" }}>personalization </span>. That's why
+          we are going to offer{" "}
+          <span style={{ color: "#E8518C" }}>personalization</span> to our
+          learners.
+        </Text>
+        <Text textAlign="justify" flexGrow={1} fontSize="xs">
+          Your <span style={{ color: "#E8518C" }}> personalization </span> will
+          start by creating your avatar, and through that avatar, we will study
+          your learning patterns and methods to create the best learning map for
+          you. In addition, the successful completion of every mission and quest
+          will grant rewards that are meant only for you
+        </Text>
+      </VStack>
     ),
   },
   {
@@ -37,7 +41,7 @@ const data = [
       </Center>
     ),
     text: (
-      <Text textAlign="justify" flexGrow={1}>
+      <Text textAlign="justify" flexGrow={1} fontSize="xs">
         Your <span style={{ color: "#E8518C" }}>created avatar</span> will be
         your lifelong virtual version of yourself. It will play with you, it
         will learn with you, and it will earn with you. Every piece of
@@ -51,11 +55,11 @@ const data = [
     image: (
       <Center flexGrow={1.5}>
         {" "}
-        <Image src="/pers2.png" h="320px" alt="learn" />
+        <Image src="/personalized.png" h="320px" alt="learn" />
       </Center>
     ),
     text: (
-      <Text textAlign="justify" flexGrow={1}>
+      <Text textAlign="justify" flexGrow={1} fontSize="xs">
         To make your learning personalized and more effective, we will take
         actions based <span style={{ color: "#E8518C" }}>on your data </span>.
         We will study how you learn, how you play, and what attracts you the
@@ -69,11 +73,11 @@ const data = [
     image: (
       <Center flexGrow={1.5}>
         {" "}
-        <Image src="/pers3.png" h="320px" alt="earn" />
+        <Image src="/personalized1.png" h="320px" alt="earn" />
       </Center>
     ),
     text: (
-      <Text textAlign="justify" flexGrow={1}>
+      <Text textAlign="justify" flexGrow={1} fontSize="xs">
         <span style={{ color: "#E8518C" }}>Learning Map</span> will guide you on
         your learning journey and will be personalized just for you. Depending
         on your current level, desired destination, characteristics and

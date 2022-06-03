@@ -12,36 +12,36 @@ const Contact = () => {
         </Center>
 
         <VStack spacing={7} w="100%" alignItems="flex-start">
-          <a href="mailto:yoda.tomujintech.com">
+          <a href="mailto:info@tomujin.digital">
             <HStack
               color="#9E329E"
               fontWeight="600"
               justifyContent={"flex-start"}
             >
               <Image src="/contact1.png" />
-              <Text pl={5}>yoda.tomujintech.com</Text>
+              <Text pl={5}>info@tomujin.digital</Text>
             </HStack>
           </a>
 
-          <a href="mailto:yoda.tomujintech.com">
+          <a href="mailto:info@tomujin.digital">
             <HStack
               color="#9E329E"
               fontWeight="600"
               justifyContent={"flex-start"}
             >
               <Image src="/contact2.png" />
-              <Text pl={5}>tomujindigital</Text>
+              <Text pl={5}>TINYLEARN.APP</Text>
             </HStack>
           </a>
 
-          <a href="tel:976-9991 3591">
+          <a href="tel:976-8917 3818">
             <HStack
               color="#9E329E"
               fontWeight="600"
               justifyContent={"flex-start"}
             >
               <Image src="/contact3.png" />
-              <Text pl={5}>976-9991 3591</Text>
+              <Text pl={5}>976-8917 3818</Text>
             </HStack>
           </a>
 

@@ -8,11 +8,11 @@ const data = [
     title: "Result",
     image: (
       <Center flexGrow={1.5}>
-        <Image src="/graph.png" h="200px" alt="play" />
+        <Image src="/result1.png" w="100%" alt="play" />
       </Center>
     ),
     text: (
-      <Text textAlign="justify" flexGrow={1}>
+      <Text textAlign="justify" flexGrow={1} fontSize="xs">
         Through your learning journey, the most important thing is the{" "}
         <span style={{ color: "#E8518C" }}>results</span>. If our learners
         persistently achieve growth and satisfactory{" "}
@@ -27,11 +27,11 @@ const data = [
     image: (
       <Center flexGrow={1.5}>
         {" "}
-        <Image src="/curriculum2.png" h="100px" alt="play" />
+        <Image src="/result2.png" w="100%" alt="play" />
       </Center>
     ),
     text: (
-      <Text textAlign="justify" flexGrow={1}>
+      <Text textAlign="justify" flexGrow={1} fontSize="xs">
         Informative <span style={{ color: "#E8518C" }}>datas</span> about the
         learners’ actual learning process will be sent directly to the school
         and parents. This will make school and parents activities more effective
@@ -44,11 +44,11 @@ const data = [
     image: (
       <Center flexGrow={1.5}>
         {" "}
-        <Image src="/dao.png" h="100px" alt="learn" />
+        <Image src="/result3.png" w="100%" alt="learn" />
       </Center>
     ),
     text: (
-      <Text textAlign="justify" flexGrow={1}>
+      <Text textAlign="justify" flexGrow={1} fontSize="xs">
         On the <span style={{ color: "#E8518C" }}> blockchain </span>, We will
         store the informative datas of what games, contents, and courses our
         learners are playing, watching, and taking on the{" "}
@@ -61,18 +61,18 @@ const data = [
     image: (
       <Center flexGrow={1.5}>
         {" "}
-        <Image src="/diplom.png" h="100px" alt="earn" />
+        <Image src="/result4.png" w="100%" alt="earn" />
       </Center>
     ),
     text: (
-      <VStack>
-        <Text textAlign="justify" flexGrow={1}>
+      <VStack pb="20%">
+        <Text textAlign="justify" flexGrow={1} fontSize="xs">
           All informative datas stored on the blockchain will be combined and
           collected at the end of each course and the result diploma will be
           generated as an <span style={{ color: "#E8518C" }}>NFT</span>. It will
           confirm the learning process and progress of the learner.
         </Text>
-        <Text textAlign="justify">
+        <Text textAlign="justify" fontSize="xs">
           An <span style={{ color: "#E8518C" }}>NFT diploma</span> is a
           permanent token that confirms a learner’s performance and progress
           when he or she enters the workplace after the completion of their

@@ -8,11 +8,11 @@ const data = [
     title: "Reward",
     image: (
       <Center flexGrow={1.5}>
-        <Image src="/chest.png" h="100px" alt="play" />
+        <Image src="/reward1.png" w="100%" alt="play" />
       </Center>
     ),
     text: (
-      <Text textAlign="justify" flexGrow={1}>
+      <Text textAlign="justify" flexGrow={1} fontSize="xs">
         A <span style={{ color: "#E8518C" }}>reward</span> is a big incentive
         for people to stay motivated, consistent, and focused. To effectively
         increase the performance of our learners, we are going to{" "}
@@ -29,11 +29,11 @@ const data = [
     image: (
       <Center flexGrow={1.5}>
         {" "}
-        <Image src="/trophy.png" h="100px" alt="play" />
+        <Image src="/reward2.png" w="100%" alt="play" />
       </Center>
     ),
     text: (
-      <Text textAlign="justify" flexGrow={1}>
+      <Text textAlign="justify" flexGrow={1} fontSize="xs">
         Based on your gaming performance, and academic and non-academic
         performance, we will reward our learners with{" "}
         <span style={{ color: "#E8518C" }}>points</span>. These reward points
@@ -47,19 +47,24 @@ const data = [
     image: (
       <Center flexGrow={1.5}>
         {" "}
-        <Image src="/earn.png" h="100px" alt="learn" />
+        <Image src="/reward3.png" w="100%" alt="learn" />
       </Center>
     ),
     text: (
-      <Text textAlign="justify" flexGrow={1}>
-        Integrated with your learning performance, we will give actual digital
-        currency as a <span style={{ color: "#E8518C" }}>reward</span>. With
-        that collected digital currency, our learners can buy better courses so
-        that they can grow more. Furthermore, depending on your shown
-        performances on challenging levels, you can win
-        <span style={{ color: "#E8518C" }}>NFT certificates </span> which will
-        be written on <span style={{ color: "#E8518C" }}>blockchain</span>.
-      </Text>
+      <VStack pb="20%">
+        <Text textAlign="justify" flexGrow={1} fontSize="xs">
+          Integrated with your learning performance, we will give actual digital
+          currency as a <span style={{ color: "#E8518C" }}>reward</span>. With
+          that collected digital currency, our learners can buy better courses
+          so that they can grow more.
+        </Text>
+        <Text textAlign="justify" flexGrow={1} fontSize="xs">
+          Furthermore, depending on your shown performances on challenging
+          levels, you can win
+          <span style={{ color: "#E8518C" }}>NFT certificates </span> which will
+          be written on <span style={{ color: "#E8518C" }}>blockchain</span>.
+        </Text>
+      </VStack>
     ),
   },
   {
@@ -67,11 +72,11 @@ const data = [
     image: (
       <Center flexGrow={1.5}>
         {" "}
-        <Image src="/dao.png" h="100px" alt="earn" />
+        <Image src="/reward4.png" w="100%" alt="earn" />
       </Center>
     ),
     text: (
-      <Text textAlign="justify" flexGrow={1}>
+      <Text textAlign="justify" flexGrow={1} fontSize="xs">
         Our learners must buy courses with a token, and depending on their
         learning performance, they can collect up to
         <span style={{ color: "#E8518C" }}> 80%</span> of their paid amount as

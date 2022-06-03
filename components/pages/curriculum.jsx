@@ -6,9 +6,14 @@ import { Page } from "../page";
 const data = [
   {
     title: "Curriculum",
-    image: <Center flexGrow={1.5}></Center>,
+    image: (
+      <Center flexGrow={1.5}>
+        {" "}
+        <Image src="/curriculum.png" w="320px" alt="play" />
+      </Center>
+    ),
     text: (
-      <Text textAlign="justify" flexGrow={1}>
+      <Text textAlign="justify" flexGrow={1} fontSize="xs">
         As soon as people hear a{" "}
         <span style={{ color: "#E8518C" }}>curriculum</span>, they think of a
         long text and paragraphs. However, the most important thing for people
@@ -23,11 +28,11 @@ const data = [
     image: (
       <Center flexGrow={1.5}>
         {" "}
-        <Image src="/curriculum1.png" h="100px" alt="play" />
+        <Image src="/curriculum3.png" w="320px" alt="play" />
       </Center>
     ),
     text: (
-      <Text textAlign="justify" flexGrow={1}>
+      <Text textAlign="justify" flexGrow={1} fontSize="xs">
         Let’s make a <span style={{ color: "#E8518C" }}>giant curriculum</span>{" "}
         into tiny tasks and make the outcomes come in a short period of time.
       </Text>
@@ -38,11 +43,11 @@ const data = [
     image: (
       <Center flexGrow={1.5}>
         {" "}
-        <Image src="/play.png" h="100px" alt="learn" />
+        <Image src="/curriculum4.png" w="320px" alt="learn" />
       </Center>
     ),
     text: (
-      <Text textAlign="justify" flexGrow={1}>
+      <Text textAlign="justify" flexGrow={1} fontSize="xs">
         The lessons’ programs will be delivered in a form of games that will
         give the{" "}
         <span style={{ color: "#E8518C" }}>most realistic feelings</span> in
@@ -56,11 +61,11 @@ const data = [
     image: (
       <Center flexGrow={1.5}>
         {" "}
-        <Image src="/curriculum2.png" h="100px" alt="earn" />
+        <Image src="/curriculum5.png" w="300px" alt="earn" />
       </Center>
     ),
     text: (
-      <Text textAlign="justify" flexGrow={1}>
+      <Text textAlign="justify" flexGrow={1} fontSize="xs">
         The results will be evaluated in an{" "}
         <span style={{ color: "#E8518C" }}> interesting, interactive way </span>
         , not by filling out a test on paper. It’s also the time to beat the big

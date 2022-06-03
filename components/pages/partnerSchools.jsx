@@ -12,7 +12,7 @@ const data = [
       </Center>
     ),
     text: (
-      <Text textAlign="justify" flexGrow={1}>
+      <Text textAlign="justify" flexGrow={1} fontSize="xs">
         As soon as people hear a curriculum, they think of a long text and
         paragraphs. However, the most important thing for people is the outcome
         of the curriculum. If that outcome is not felt in a short period of

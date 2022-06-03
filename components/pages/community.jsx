@@ -9,11 +9,11 @@ const data = [
     title: "Community",
     image: (
       <Center flexGrow={1.5}>
-        <Image src="/comm1.png" h="320px" alt="play" />
+        <Image src="/comm1.png" w="100%" alt="play" />
       </Center>
     ),
     text: (
-      <Text textAlign="justify" flexGrow={1}>
+      <Text textAlign="justify" flexGrow={1} fontSize="xs">
         By becoming a part of Tiny, you will join our virtual world where you
         can fulfill your social needs by going to your virtual school, competing
         with others, and <span style={{ color: "#E8518C" }}>catching up</span>{" "}
@@ -31,7 +31,7 @@ const data = [
       </Center>
     ),
     text: (
-      <Text textAlign="justify" flexGrow={1}>
+      <Text textAlign="justify" flexGrow={1} fontSize="xs">
         Inside the virtual world of Tiny, there will be{" "}
         <span style={{ color: "#E8518C" }}> virtual schools </span> where normal
         school activities will be held. Same as real life, here you will find{" "}
@@ -55,7 +55,7 @@ const data = [
       </Center>
     ),
     text: (
-      <Text textAlign="justify" flexGrow={1}>
+      <Text textAlign="justify" flexGrow={1} fontSize="xs">
         You won't know if you are improving or not unless you know your current
         level. Therefore, to help you to find your current level and compete
         with your friends, we brought a
@@ -69,17 +69,22 @@ const data = [
     image: (
       <Center flexGrow={1.5}>
         {" "}
-        <Image src="/comm4.png" h="360px" alt="earn" />
+        <Image src="/comm4.png" w="100%" alt="earn" />
       </Center>
     ),
     text: (
-      <Text textAlign="justify" flexGrow={1}>
-        Same as people making daily posts, status updates and catching up with
-        others on <span style={{ color: "#E8518C" }}>social platforms </span>,
-        Tiny will let you share your academic status, crazy achievements, and
-        everything related to your growth. You have to show them that getting a
-        full score on math ain't been that easy.
-      </Text>
+      <VStack pb="20%">
+        <Text textAlign="justify" flexGrow={1} fontSize="xs">
+          Same as people making daily posts, status updates and catching up with
+          others on <span style={{ color: "#E8518C" }}>social platforms </span>,
+          Tiny will let you share your academic status, crazy achievements, and
+          everything related to your growth.
+        </Text>
+        <Text textAlign="justify" flexGrow={1} fontSize="xs">
+          You have to show them that getting a full score on math ain't been
+          that easy.
+        </Text>
+      </VStack>
     ),
   },
 ];

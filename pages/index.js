@@ -30,89 +30,94 @@ import Contact from "../components/pages/Contact";
 import Play from "../components/pages/play";
 
 const renderCount = (count) => (count < 10 ? "0" + count : count);
-const pages = [
-  {
-    title: "TinyVerse",
-    path: "/",
-    page: <HomePage />,
-    showLogo: false,
-  },
-  {
-    title: "About",
-    path: "/about",
-    page: <About />,
-    showLogo: true,
-  },
-  {
-    title: "Play & Learn & Earn",
-    path: "/play",
-    page: <Play />,
-    showLogo: false,
-  },
-  {
-    title: "Features",
-    path: "/features",
-    page: <Features />,
-    showLogo: false,
-  },
-  {
-    title: "Curriculum",
-    path: "/curriculum",
-    page: <Curriculum />,
-    showLogo: false,
-  },
-  {
-    title: "Personalized",
-    path: "/personalized",
-    page: <Personalized />,
-    showLogo: false,
-  },
-  {
-    title: "Ai Teachers",
-    path: "/aiTeachers",
-    page: <AiTeachers />,
-    showLogo: false,
-  },
-  {
-    title: "Community",
-    path: "/community",
-    page: <Community />,
-    showLogo: false,
-  },
-  {
-    title: "Reward",
-    path: "/reward",
-    page: <Reward />,
-    showLogo: false,
-  },
-  {
-    title: "Result",
-    path: "/result",
-    page: <Result />,
-    showLogo: false,
-  },
-  {
-    title: "Partner Schools",
-    path: "/partner",
-    page: <PartnerSchools />,
-    showLogo: false,
-  },
-  {
-    title: "Team",
-    path: "/team",
-    page: <Team />,
-    showLogo: true,
-  },
-  {
-    title: "Contact",
-    path: "/contact",
-    page: <Contact />,
-    showLogo: true,
-  },
-];
 
 export default function Home() {
   const [p, setP] = useState(0);
+
+  const changeHandler = (num) => {
+    setP(num);
+  };
+
+  const pages = [
+    {
+      title: "TinyVerse",
+      path: "/",
+      page: <HomePage />,
+      showLogo: false,
+    },
+    {
+      title: "About",
+      path: "/about",
+      page: <About />,
+      showLogo: true,
+    },
+    {
+      title: "Play & Learn & Earn",
+      path: "/play",
+      page: <Play />,
+      showLogo: false,
+    },
+    {
+      title: "Features",
+      path: "/features",
+      page: <Features func={changeHandler} />,
+      showLogo: false,
+    },
+    {
+      title: "Curriculum",
+      path: "/curriculum",
+      page: <Curriculum />,
+      showLogo: false,
+    },
+    {
+      title: "Personalized",
+      path: "/personalized",
+      page: <Personalized />,
+      showLogo: false,
+    },
+    {
+      title: "Ai Teachers",
+      path: "/aiTeachers",
+      page: <AiTeachers />,
+      showLogo: false,
+    },
+    {
+      title: "Community",
+      path: "/community",
+      page: <Community />,
+      showLogo: false,
+    },
+    {
+      title: "Reward",
+      path: "/reward",
+      page: <Reward />,
+      showLogo: false,
+    },
+    {
+      title: "Result",
+      path: "/result",
+      page: <Result />,
+      showLogo: false,
+    },
+    {
+      title: "Partner Schools",
+      path: "/partner",
+      page: <PartnerSchools />,
+      showLogo: false,
+    },
+    {
+      title: "Team",
+      path: "/team",
+      page: <Team />,
+      showLogo: true,
+    },
+    {
+      title: "Contact",
+      path: "/contact",
+      page: <Contact />,
+      showLogo: true,
+    },
+  ];
 
   const onChange = (e) => {
     setP(e.to);

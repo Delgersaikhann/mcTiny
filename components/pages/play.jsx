@@ -13,7 +13,7 @@ const data = [
       </Center>
     ),
     text: (
-      <Text textAlign="justify" flexGrow={1}>
+      <Text textAlign="justify" flexGrow={1} fontSize="xs">
         To learn well, you need to play more, not to give up{" "}
         <span style={{ color: "#E8518C" }}>playing games</span>. Evaluate what
         you learn from the{" "}
@@ -30,7 +30,7 @@ const data = [
       </Center>
     ),
     text: (
-      <Text textAlign="justify" flexGrow={1}>
+      <Text textAlign="justify" flexGrow={1} fontSize="xs">
         To <span style={{ color: "#E8518C" }}>learn</span> in a way that suits
         you perfectly is the most effective. Learning{" "}
         <span style={{ color: "#E8518C" }}>tiny by tiny</span> leads to great
@@ -47,7 +47,7 @@ const data = [
       </Center>
     ),
     text: (
-      <Text textAlign="justify" flexGrow={1}>
+      <Text textAlign="justify" flexGrow={1} fontSize="xs">
         <span style={{ color: "#E8518C" }}>
           {" "}
           A good learner lives a good life
