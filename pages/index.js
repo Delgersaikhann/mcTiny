@@ -131,6 +131,21 @@ export default function Home() {
     <Box w="100vw" pos="relative">
       <Head>
         <title>{pages[p].title}</title>
+        <link rel="shortcut icon" href="/earn.png" />
+        <meta
+          name="description"
+          content={
+            "Tiny is a real world result based virtual world where users can learn their gaming experiences.In the virtual world of Tiny, you will always be learning and evolving. "
+          }
+        />
+        <meta itemprop="name" content={"Tiny"} />
+        <meta
+          itemprop="description"
+          content={
+            "Tiny is a real world result based virtual world where users can learn their gaming experiences.In the virtual world of Tiny, you will always be learning and evolving. "
+          }
+        />
+        <meta itemprop="image" content={<img src="/reward1.png" />} />
       </Head>
       <FullPage afterChange={(e) => onChange(e)}>
         {pages?.map((el, idx) => (
