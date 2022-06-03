@@ -146,6 +146,8 @@ export default function Home() {
           }
         />
         <meta itemProp="image" content={"/reward1.png"} />
+        <meta name={"og:image"} content="/reward1.png" />
+        <meta name="image" content="/reward1.png" />
       </Head>
       <FullPage afterChange={(e) => onChange(e)}>
         {pages?.map((el, idx) => (
