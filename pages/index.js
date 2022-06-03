@@ -145,10 +145,7 @@ export default function Home() {
             "Tiny is a real world result based virtual world where users can learn their gaming experiences.In the virtual world of Tiny, you will always be learning and evolving. "
           }
         />
-        <meta
-          itemProp="image"
-          content={<img src="/reward1.png" alt="metadata" />}
-        />
+        <meta itemProp="image" content={"/reward1.png"} />
       </Head>
       <FullPage afterChange={(e) => onChange(e)}>
         {pages?.map((el, idx) => (
