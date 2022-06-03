@@ -138,14 +138,17 @@ export default function Home() {
             "Tiny is a real world result based virtual world where users can learn their gaming experiences.In the virtual world of Tiny, you will always be learning and evolving. "
           }
         />
-        <meta itemprop="name" content={"Tiny"} />
+        <meta itemProp="name" content={"Tiny"} />
         <meta
-          itemprop="description"
+          itemProp="description"
           content={
             "Tiny is a real world result based virtual world where users can learn their gaming experiences.In the virtual world of Tiny, you will always be learning and evolving. "
           }
         />
-        <meta itemprop="image" content={<img src="/reward1.png" />} />
+        <meta
+          itemProp="image"
+          content={<img src="/reward1.png" alt="metadata" />}
+        />
       </Head>
       <FullPage afterChange={(e) => onChange(e)}>
         {pages?.map((el, idx) => (
